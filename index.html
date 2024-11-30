@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a list of links</title>
+    <style>
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: green;
+        }
+
+         /* Task -2 */
+
+         h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+         }
+         p {
+            font-size: 1.2rem; 
+            line-height: 1.6;  
+            text-align: justify; 
+         }
+
+         /* Task -3 */
+        div.card{
+            border: 1px solid grey;
+            padding: 20px;
+            margin: 10px;
+            max-width: 300px;
+        }
+
+        /*--Task 4 -- */
+        div.contain {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            }
+        .navbar {
+            display: flex;              
+            justify-content: space-around; 
+            width: 60%;                    
+            }
+            .navbar a {
+             text-decoration: none;         
+            color: black;              
+            font-size: 1.2rem;            
+            }
+
+
+
+            .gallery {
+    display: grid;                    /* Use CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    gap: 10px;                         /* Set a gap of 10px between grid items */
+}
+
+/* Image Styling */
+.gallery img {
+    width: 100%;                        /* Make images fill their grid cells */
+    height: 500px;                       /* Maintain aspect ratio of the images */
+    border-radius: 8px;                 /* Optional: Add rounded corners to images */
+}       
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;     /* Switch to a single column layout */
+    }
+}
+    </style>
+  </head>
+  <body>
+  <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contacts</a></li>
+      <li><a href="">blog</a></li>
+  </ul>
+
+
+
+  <!-- Task 2 -->
+   <h1>Welcome to My Webpage</h1>
+   <p>This is a website which contains a title and paragraph</p>
+
+    <!-- Task 3 -->
+
+   <div class="card">
+   <p>This is a simple card with a border, padding, and margin.</p>
+   </div>
+<!-- Task 4 -->
+<div class="contains">
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+<!-- Task 5 -->
+
+<!-- Photo Gallery -->
+<div class="gallery">
+<img src="IMG 1.png.jpg" alt="Image 1">
+<img src="IMG 2.png.jpg" alt="Image 2">
+<img src="KKR.png.jpg" alt="Image 3">
+<img src="IMG 4.png.jpg" alt="Image 4">
+</div>
+</body>
+</html>
